@@ -14,7 +14,7 @@ Objective: To create a tidy data set of wearable computing data from http://arch
 README.md -- Script information
 CodeBook.md -- codebook describing variables, the data and transformations
 run_analysis.R -- actual R code
-tidy_data.txt -- Data ouput from run_analysis.R
+tidy_data.txt -- Data output from run_analysis.R
 
 #Project description:
 You should create one R script called run_analysis.R that does the following: 
@@ -37,12 +37,12 @@ Note: the R script is built to run without including any libraries for the purpo
 #run_analysis.R steps
 
 
-1. Read the test, train and subject files: y_test.txt, subject_test.txt and X_test.txt.
+1.Read the test, train and subject files: y_test.txt, subject_test.txt and X_test.txt.
 Combine the files to a data frame linking subjects, labels, and the rest of the data.
 
 2.Read the activity labels from activity_labels.txt and replace the numbers with the text
 
-3.Read the features from features.txt and extract only those features that are either means ("mean()") or standard deviation ("std()"). The reason for leaving out meanFreq() is that the goal for this step is to only include means and standard deviations of measurements, of which meanFreq() is neither.
+3.Read the features from features.txt and extract only those features that are either means ("mean()") or standard deviation ("std()"). The reason for leaving out meanFreq() is that the goal for this step is to only include means and standard deviations of measurements, of which meanFreq() is neither.Factor to character conversion was used to complete this task.
 
 4.A long data frame (melt_data) is then created that includes subjects, labels and the described features for mean(0 and std().
 
@@ -50,4 +50,4 @@ Combine the files to a data frame linking subjects, labels, and the rest of the 
 
 6.Create a wide data frame (tidy_data) by finding the mean for each combination of subject and label using aggregate() function
 
-7. Write the new tidy data set into a text file called tidy_data.txt.
+7.Write the new tidy data set into a text file called tidy_data.txt.

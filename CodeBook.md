@@ -5,7 +5,7 @@ date: "May 21, 2015"
 output: html_document
 ---
 
-#CODEBOOK GETTING AND CLEANIND DATA - PROJECT 2
+#CODEBOOK GETTING AND CLEANING DATA - PROJECT 2
 ##DATA SOURCES
 The dataset includes the following files:
 *'README.txt': Text File with description of the scripts used in this project
